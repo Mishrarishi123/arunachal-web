@@ -84,6 +84,19 @@
     margin: 0;
 }
 
+.scheme-link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  padding: 1rem;
+}
+
+.scheme-link:hover {
+  background-color: #f9f9f9;
+}
+
 .scheme-item {
     display: flex;
     justify-content: space-between;

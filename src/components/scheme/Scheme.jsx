@@ -1,7 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "./Scheme.css"; // Import the CSS
+import "./Scheme.css";
+import Modal from "../modal/Pb" // Import the CSS
 
 const schemesData = [
   {
@@ -22,6 +23,18 @@ const schemesData = [
 ];
 
 const Scheme = () => {
+
+  const [showPBModal, setShowPBModal] = useState(false);
+
+  const handleItemClick = (item) => {
+    if (item === "Panchayat Bhavan") {
+      setShowPBModal(true);
+    } else {
+      console.log("Clicked item:", item);
+    }
+  };
+
+ 
   return (
     <section className="schemes-section">
       <div className="scheme-overlay-left" />
@@ -78,13 +91,24 @@ const Scheme = () => {
             <ul className="scheme-list">
               {scheme.items.map((item, i) => (
                 <li key={i} className="scheme-item">
-                  <span>{item}</span>
-                  <span className="arrow">›</span>
+                  <a
+                    href="#"
+                    onClick={(e) => {
+                      e.preventDefault(); // prevent default anchor navigation
+                      handleItemClick(item);
+                    }}
+                    className="scheme-link"
+                  >
+                    <span>{item}</span>
+                    <span className="arrow">›</span>
+                  </a>
                 </li>
               ))}
             </ul>
           </motion.div>
         ))}
+
+        <Modal isOpen={showPBModal} onClose={() => setShowPBModal(false)} />
       </div>
     </section>
   );

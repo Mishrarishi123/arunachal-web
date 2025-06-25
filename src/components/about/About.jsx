@@ -69,14 +69,14 @@ const Scheme = () => {
             </div>
 
             <div className="video-raaj">
-              <div class="video-card">
-                <div class="thumbnail">
+              <div className="video-card">
+                <div className="thumbnail">
                   <img src="/images/panchayati.png" alt="Thumbnail" />
-                  <div class="play-icon">
+                  <div className="play-icon">
                     <img src="/images/playbutton.svg" alt="Play" />
                   </div>
                 </div>
-                <div class="video-info">
+                <div className="video-info">
                   <h4>Panchayat Bhavan inaugurated</h4>
                   <p>
                     Lorem Ipsum is simply dummy
@@ -87,14 +87,14 @@ const Scheme = () => {
                 </div>
               </div>
 
-              <div class="video-card">
-                <div class="thumbnail">
+              <div className="video-card">
+                <div className="thumbnail">
                   <img src="/images/panchayati.png" alt="Thumbnail" />
-                  <div class="play-icon">
+                  <div className="play-icon">
                     <img src="/images/playbutton.svg" alt="Play" />
                   </div>
                 </div>
-                <div class="video-info">
+                <div className="video-info">
                   <h4>Panchayat Bhavan inaugurated</h4>
                   <p>
                     Lorem Ipsum is simply dummy
@@ -105,14 +105,14 @@ const Scheme = () => {
                 </div>
               </div>
 
-              <div class="video-card">
-                <div class="thumbnail">
+              <div className="video-card">
+                <div className="thumbnail">
                   <img src="/images/panchbhawan.png" alt="Thumbnail" />
-                  <div class="play-icon">
+                  <div className="play-icon">
                     <img src="/images/playbutton.svg" alt="Play" />
                   </div>
                 </div>
-                <div class="video-info">
+                <div className="video-info">
                   <h4>Panchayat Bhavan inaugurated</h4>
                   <p>
                     Lorem Ipsum is simply dummy
@@ -123,14 +123,14 @@ const Scheme = () => {
                 </div>
               </div>
 
-              <div class="video-card">
-                <div class="thumbnail">
+              <div className="video-card">
+                <div className="thumbnail">
                   <img src="/images/panchbhawan.png" alt="Thumbnail" />
-                  <div class="play-icon">
+                  <div className="play-icon">
                     <img src="/images/playbutton.svg" alt="Play" />
                   </div>
                 </div>
-                <div class="video-info">
+                <div className="video-info">
                   <h4>Panchayat Bhavan inaugurated</h4>
                   <p>
                     Lorem Ipsum is simply dummy
